@@ -8,6 +8,27 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("./assets/fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/fonts/Lato/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("./assets/fonts/Oswald/static/Oswald-Light.ttf");
+    font-weight: bold;
 }
