@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3f37701.css",
+    "main.js": "/static/js/main.ce22bb4e.js",
+    "static/media/twitter.jpg": "/static/media/twitter.e73049ce833f7fe80211.jpg",
+    "static/media/resume.pdf": "/static/media/resume.f92db81034d0f5d6fd31.pdf",
+    "static/media/weather.jpg": "/static/media/weather.da219620d5d41d53e005.jpg",
+    "static/media/Lato-Light.ttf": "/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
+    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/Arshdeep.png": "/static/media/Arshdeep.dbe19a624d02ed494212.png",
+    "static/media/Oswald-Light.ttf": "/static/media/Oswald-Light.0db1d0c56bdf030d9f31.ttf",
+    "static/media/002logo-transparent.png": "/static/media/002logo-transparent.e175574c4699848876c7.png",
+    "static/media/phone.webp": "/static/media/phone.21b2dbd5b70e3f0125cb.webp",
+    "index.html": "/index.html",
+    "main.c3f37701.css.map": "/static/css/main.c3f37701.css.map",
+    "main.ce22bb4e.js.map": "/static/js/main.ce22bb4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3f37701.css",
+    "static/js/main.ce22bb4e.js"
+  ]
+}
