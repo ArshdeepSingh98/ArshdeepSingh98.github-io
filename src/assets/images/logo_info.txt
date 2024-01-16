@@ -1,7 +1,0 @@
-
-            Fonts used: PlayfairDisplay-Regular,CantataOne-Regular 
-
-            Colors used: C1C5BC,F5F7F1  
-
-            Icon url: https://thenounproject.com/term/equation/3237683  
-        
