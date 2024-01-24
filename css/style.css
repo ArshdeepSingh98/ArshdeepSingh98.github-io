@@ -974,7 +974,7 @@ textarea {
     left: 21%;
     transform: translateX(-50%);
     width: 2px;
-    height: calc(100% - 330px);
+    height: calc(100% - 340px);
     background-color: #fdf800;
 }
 
