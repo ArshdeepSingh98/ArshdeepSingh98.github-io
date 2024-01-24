@@ -998,6 +998,16 @@ textarea {
     border: 2px solid #fdf800;
 }
 
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 21%;
+    transform: translateY(-50%);
+    width: 58px;
+    border-top: 2px solid #fdf800;
+}
+
 .timeline-place {
     display: flex;
     justify-content: space-between;
@@ -1040,6 +1050,7 @@ textarea {
 @media (max-width: 768px) {
     .timeline::before {
         left: 50%;
+        height: calc(100% - 200px);
     }
 
     .timeline-item {
