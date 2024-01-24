@@ -996,6 +996,7 @@ textarea {
     border-radius: 50%;
     background-color: #2c2c2c;
     border: 2px solid #fdf800;
+    z-index: 2;
 }
 
 .timeline-item::before {
@@ -1004,8 +1005,9 @@ textarea {
     top: 30px;
     left: 21%;
     transform: translateY(-50%);
-    width: 58px;
+    width: 100px;
     border-top: 2px solid #fdf800;
+    z-index: 1;
 }
 
 .timeline-place {
@@ -1045,6 +1047,7 @@ textarea {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {
