@@ -60,6 +60,32 @@ li {
     list-style: none;
 }
 
+ul.custom-list {
+    list-style: none; /* Remove default list styles */
+    font-size: 1.3rem;
+}
+
+ul.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5; 
+}
+
+ul.custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(0% + 10px);
+    width: 5px;
+    height: 5px;
+    transform: translateY(-50%);
+    margin-right: 4px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background: #fdf800;
+}
+
 input:focus,
 button:focus,
 a:focus,
@@ -257,7 +283,6 @@ textarea {
     color: #fff;
 }
 
-
 .text-primary {
     color: #000;
     font-size: 2.2rem;
@@ -446,52 +471,69 @@ textarea {
 }
 
 .projects__row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
-  margin-bottom: 11rem; }
-  @media only screen and (max-width: 56.25em) {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+}
+@media only screen and (max-width: 56.25em) {
     .projects__row {
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-      margin-bottom: 8rem; } }
-  @media only screen and (max-width: 56.25em) {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin-bottom: 8rem;
+    }
+}
+@media only screen and (max-width: 56.25em) {
     .projects__row {
-      text-align: center; } }
-  .projects__row:last-child {
-    margin-bottom: 0; }
-  .projects__row-img-cont {
-    overflow: hidden; }
-  .projects__row-img {
+        text-align: center;
+    }
+}
+.projects__row:last-child {
+    margin-bottom: 0;
+}
+.projects__row-img-cont {
+    overflow: hidden;
+}
+.projects__row-img {
     width: 100%;
     display: block;
-    object-fit: cover; }
-  .projects__row-content {
+    object-fit: cover;
+}
+.projects__row-content {
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     height: 100%;
     flex-direction: column;
-    align-items: flex-start; }
-    @media only screen and (max-width: 56.25em) {
-      .projects__row-content {
-        align-items: center; } }
+    align-items: flex-start;
+}
+@media only screen and (max-width: 56.25em) {
+    .projects__row-content {
+        align-items: center;
+    }
+}
+.projects__row-content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
     .projects__row-content-title {
-      font-weight: 700;
-      font-size: 2.8rem;
-      margin-bottom: 2rem; }
-      @media only screen and (max-width: 37.5em) {
-        .projects__row-content-title {
-          font-size: 2.4rem; } }
+        font-size: 2.4rem;
+    }
+}
+.projects__row-content-desc {
+    font-size: 1.8rem;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
     .projects__row-content-desc {
-      font-size: 1.8rem;
-      color: grey;
-      max-width: 60rem;
-      line-height: 1.7;
-      margin-bottom: 3rem; }
-      @media only screen and (max-width: 37.5em) {
-        .projects__row-content-desc {
-          font-size: 1.7rem; } }
+        font-size: 1.7rem;
+    }
+}
 
 .contact {
     background: linear-gradient(
@@ -505,17 +547,17 @@ textarea {
 }
 
 .email-link {
-  color: #fdf800;
-  background-color: black;
-  border: 1px solid #fdf800;
-  border-radius: 5px;
-  padding: 1.25rem 1.75rem;
-  font-size: 1.8rem;
-  line-height: 1.6;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 112px;
+    color: #fdf800;
+    background-color: black;
+    border: 1px solid #fdf800;
+    border-radius: 5px;
+    padding: 1.25rem 1.75rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 112px;
 }
 
 .project-cs-hero {
@@ -926,13 +968,13 @@ textarea {
 }
 
 .timeline::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 100px;
+    top: 25px;
     left: 21%;
     transform: translateX(-50%);
     width: 2px;
-    height: calc(100% - 250px);
+    height: calc(100% - 330px);
     background-color: #fdf800;
 }
 
@@ -940,13 +982,13 @@ textarea {
     position: relative;
     margin-bottom: 50px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .timeline-item::after {
-    content: '';
+    content: "";
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 21%;
     transform: translate(-50%, -50%);
     width: 30px;
@@ -976,6 +1018,7 @@ textarea {
     font-weight: 500;
     line-height: 1.6;
     min-width: fit-content;
+    margin-top: 20px;
 }
 
 .timeline-date-mobile {
