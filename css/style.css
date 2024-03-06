@@ -68,7 +68,7 @@ ul.custom-list {
 ul.custom-list li {
     position: relative;
     padding-left: 20px;
-    line-height: 1.5; 
+    line-height: 1.5;
 }
 
 ul.custom-list li::before {
@@ -251,6 +251,7 @@ textarea {
     padding: 1.5rem 8rem;
     font-size: 2rem;
 }
+
 .btn--med {
     padding: 1.5rem 5rem;
     font-size: 1.6rem;
@@ -309,6 +310,10 @@ textarea {
     @media only screen and (max-width: 56.25em) {
         flex-direction: column;
     }
+}
+
+.home-buttons-new-container {
+    justify-content: center;
 }
 
 .home-hero {
@@ -533,6 +538,76 @@ textarea {
     .projects__row-content-desc {
         font-size: 1.7rem;
     }
+}
+
+.certificates {
+    background: white;
+    color: black;
+}
+
+.certificates_grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(300px, 1fr)
+    ); /* Adjust minmax and other values as needed */
+    grid-gap: 4rem;
+    margin-bottom: 11rem;
+}
+
+.certificates__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 6px;
+    /* border: 1px solid red; */
+    box-shadow:
+        0 0 2px rgba(0, 0, 0, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.2),
+        0 2px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 250px;
+    background-size: cover; /* Adjust as needed: 'cover' or 'contain' */
+    background-position: center; /* Adjust as needed: 'center', 'top', 'bottom', etc. */
+    background-repeat: no-repeat;
+}
+
+.cert1 {
+    background-image: url("/assets/png/certificates/cert1.png");
+}
+
+.cert2 {
+    background-image: url("/assets/png/certificates/cert2.png");
+}
+
+.cert3 {
+    background-image: url("/assets/png/certificates/cert3.png");
+}
+
+.cert4 {
+    background-image: url("/assets/png/certificates/cert4.png");
+}
+
+.cert5 {
+    background-image: url("/assets/png/certificates/cert5.png");
+}
+
+.cert6 {
+    background-image: url("/assets/png/certificates/cert6.png");
+}
+
+.certificates__item-bottomText {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    bottom: 0;
+    height: fit-content;
+    font-size: 12px;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .contact {
